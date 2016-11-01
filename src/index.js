@@ -13,7 +13,7 @@ module.exports = {
         var check = validator.isObject()
                 .withRequired('src', validator.isString())
                 .withRequired('dist', validator.isString())
-                .withRequired('distFolder', validator.isString())
+                .withRequired('srcFolder', validator.isString())
                 .withRequired('babelHelpers', validator.isString())
             ;
 
@@ -52,7 +52,7 @@ module.exports = {
                     options: {
                         patterns: [
                             {
-                                match: new RegExp("^define\\('" + options.distFolder + "\/", 'g'),
+                                match: new RegExp("^define\\('" + options.srcFolder + "\/", 'g'),
                                 replacement: "define('"
                             }
                         ]
