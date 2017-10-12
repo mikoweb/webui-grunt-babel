@@ -54,6 +54,10 @@ module.exports = {
                             {
                                 match: new RegExp("^define\\('" + options.srcFolder + "\/", 'g'),
                                 replacement: "define('"
+                            },
+                            {
+                                match: new RegExp("^define\\(\"" + options.srcFolder + "\/", 'g'),
+                                replacement: 'define("'
                             }
                         ]
                     },

@@ -4,7 +4,7 @@
         "name": "Rafał Mikołajun"
     },
     "license": "LGPL-3.0",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Grunt tasks for build scripts.",
     "keywords": [
         "webui",
